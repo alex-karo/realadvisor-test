@@ -7,8 +7,17 @@
 
 ## How to start
 ```shell
+git pull git@github.com:alex-karo/realadvisor-test.git
+cd realadvisor-test
 docker-compose up -d
 cd hasura
 hasura metadata apply
 hasura seed apply
 ```
+
+## TODO
+- Add production setup
+- Describe deploy
+- Set up prettier/linters and add git hooks
+- Refactor back: split file, migrate to apollo server, add validation and error handling
+- Refactor front: improve error handling, make pretty layout, extract api url to env
