@@ -12,13 +12,13 @@ cd realadvisor-test
 docker-compose up -d
 cd hasura
 hasura metadata apply
-hasura seed apply
+hasura seed apply --database-name realadvisor
 ```
 
 ## Check URLs
-- [1](http://localhost:3000/best-hello-ever)
-- [2](http://localhost:3000/best-hello-world-ever)
-- [3](http://localhost:3000/best-world-ever)
+- [best-hello-ever](http://localhost:3000/best-hello-ever)
+- [best-hello-world-ever](http://localhost:3000/best-hello-world-ever)
+- [best-world-ever](http://localhost:3000/best-world-ever)
 
 ## TODO
 - Add production setup
