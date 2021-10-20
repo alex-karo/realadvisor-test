@@ -1,0 +1,5 @@
+- name: Back
+  definition:
+    url: http://back/graphql
+    timeout_seconds: 60
+  comment: ""

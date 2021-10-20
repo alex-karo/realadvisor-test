@@ -1,0 +1,16 @@
+actions: []
+custom_types:
+  enums: []
+  input_objects: []
+  objects:
+  - name: Document
+    relationships:
+    - remote_table:
+        schema: public
+        name: long_tails
+      name: long_tails
+      source: realadvisor
+      type: object
+      field_mapping:
+        id: json_id
+  scalars: []

@@ -67,6 +67,6 @@ app.use('/graphql', graphqlHTTP({
 (async () => {
     await updateDb();
     initWatcher();
-    app.listen(4000);
+    app.listen(80);
 })();
-console.log('Running a GraphQL API server at http://localhost:4000/graphql');
+console.log('Running a GraphQL API server at http://localhost/graphql');
