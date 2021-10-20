@@ -1,8 +1,10 @@
 import type {GetServerSideProps, NextPage} from 'next'
 import {Api} from "../src/api";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 interface ServerSideProps {
-    document: {
+    document?: {
         title: string;
         description: string;
     }
@@ -10,11 +12,14 @@ interface ServerSideProps {
 }
 
 const Document: NextPage<ServerSideProps> = (props) => {
-    if (props.notFound) {
-        return <div>Document not found</div>;
+    if (props.notFound || !props.document) {
+        return <div className={styles.container}>Document not found</div>;
     }
     return (
-        <div>
+        <div className={styles.container}>
+            <Head>
+                <title>{props.document.title}</title>
+            </Head>
             <h1>{props.document.title}</h1>
             <p>{props.document.description}</p>
         </div>

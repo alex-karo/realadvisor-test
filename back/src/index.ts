@@ -16,7 +16,7 @@ async function updateDb(): Promise<void> {
             db.set(row.id, row)
         }
     } catch (e) {
-        console.error(`Cant update data`, e)
+        console.error(`Can't update data`, e)
     }
 }
 

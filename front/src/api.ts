@@ -1,8 +1,6 @@
 import { gql } from "@apollo/client";
 import { client } from "./apollo-client";
 
-const API_URL = 'http://localhost:8080/graphql';
-
 const DOCUMENT_QUERY = gql`
     query GetDocument($tail: String!) {
         long_tails(where: {tail: {_eq: $tail}}) {

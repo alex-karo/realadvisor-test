@@ -15,9 +15,14 @@ hasura metadata apply
 hasura seed apply
 ```
 
+## Check URLs
+- [1](http://localhost:3000/best-hello-ever)
+- [2](http://localhost:3000/best-hello-world-ever)
+- [3](http://localhost:3000/best-world-ever)
+
 ## TODO
 - Add production setup
 - Describe deploy
 - Set up prettier/linters and add git hooks
 - Refactor back: split file, migrate to apollo server, add validation and error handling
-- Refactor front: improve error handling, make pretty layout, extract api url to env
+- Refactor front: improve error handling
