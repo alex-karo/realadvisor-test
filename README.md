@@ -25,4 +25,4 @@ hasura seed apply
 - Describe deploy
 - Set up prettier/linters and add git hooks
 - Refactor back: split file, migrate to apollo server, add validation and error handling
-- Refactor front: improve error handling
+- Refactor front: improve error handling, add typings/functions generation from GraphQL
